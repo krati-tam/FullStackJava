@@ -1,0 +1,38 @@
+package Date;
+
+import java.time.*;
+//import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoField;
+
+
+public class Date {
+	public static void main (String args[])
+	{
+		
+		LocalDate dt=LocalDate.parse("2023-05-11");
+		LocalDate d1=dt.plusMonths(4);
+		System.out.println(d1);
+		
+		LocalTime t =LocalTime.now();
+		System.out.println(t);
+		
+		LocalDateTime td =LocalDateTime.now();
+		System.out.println(td);
+		
+		ZonedDateTime td1 =ZonedDateTime.now(ZoneId.of("America/Los_Angeles"));
+		System.out.println(td1);
+		
+		MonthDay md= MonthDay .now();
+		LocalDate mb= md.atYear(7);
+		System.out.println(mb);
+		
+		//Period p=Period.of(2,2,10);
+		//System.out.println(p.addTo(LocalDate.now()));
+		   
+		//DateTimeFormatter df=DateTimeFormatter.ofPattern("dd/MM/yyyy hh:mm:ss z Z");
+		System.out.println(td.get(ChronoField.YEAR));
+	}
+
+
+
+}
