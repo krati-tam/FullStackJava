@@ -1,0 +1,19 @@
+package defaultMethods;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+  Vehicles v= new Car();
+  v.drive() ;
+  v.speedMeter();
+
+ v= new Bike();
+   v.drive() ;
+  v.speedMeter();
+
+Vehicles.brake();
+}
+	}
+
+
