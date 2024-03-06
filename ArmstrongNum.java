@@ -2,21 +2,21 @@
 import java.util.*;
 class PalindromeNum
 {
-	public static void main(String args[])
-	    {
-	    	int revNum = 0, remainder, orgNum;
+public static void main(String args[])
+{
+	    	
 Scanner sc=new Scanner (System.in);
 System.out.println("enter the number");
 int n = sc.nextInt();
-   
-    orgNum = n;
+    
+    temp = n;
+int sum=0;
 
-
-    while (n != 0) 
+    while (n > 0) 
 {
-        remainder = n % 10;
-        revNum = revNum * 10 + remainder;
-        n /= 10;
+        int d = n % 10;
+	 n /= 10;
+	  Sum = Sum * 10 + (d*d*d);
     }
 
         if (orgNum == revNum)
