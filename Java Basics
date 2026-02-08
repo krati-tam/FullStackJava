@@ -1,0 +1,46 @@
+1. Hello and Name Printer
+class Main {
+    public static void main(String[] args) {  // 
+        System.out.println("Hello");  //// System class is defined in java .lang object package out for standard output stream.
+         System.out.println("Krati Tamrakar");
+    }
+}
+
+2. Sum of Two Numbers
+#input from the user 
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+      
+        Scanner sc = new Scanner (System.in);  +>    where Scanner class is defined in java.util package, sc is object, new is reserved keyword to create object of the class.
+// System class is defined in java .lang object package in for standard input stream from keyboard.
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = a+b;
+      System.out.println(c);
+    }
+}
+Scanner sc = new Scanner (System.in);
+        char a = sc.next().charAt(0);
+         char b = sc.next().charAt(0);
+        char c =(char) (a+b);
+      System.out.println(c);  o/p = ?
+
+
+3. Arithmetic Operations
+System.out.println(-5 + 8 * 6);
+      System.out.println(5 + 15 / 3 * 2 - 8 % 3);
+
+5.  print The table 
+ int a = 5;
+          for (int i=1;i<=10; i++)
+       {
+           int c = a * i;
+           System.out.println(a + "x" + i + "=" + c);
+       }
+6.   Area and perimeter of circle =    
+int r=sc.nextInt();
+            int p= 2 * (22/7) * r;
+            System.out.println(p);
+            int a = (22/7) * r *r;
+             System.out.println(a);
